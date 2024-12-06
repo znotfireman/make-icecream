@@ -1,0 +1,11 @@
+{
+    "name": "make-icecream",
+    "tree": {
+        "$className": "DataModel",
+        "StarterGui": {
+            "Main": {
+                "$path": "src"
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Static tasks configuration.
+//
+[
+    {
+        "label": "Rojo autogenerate sourcemap",
+        "command": "rojo sourcemap --watch --output sourcemap.json --include-non-scripts",
+    },
+    {
+        "label": "Rojo serve default.project.json",
+        "command": "rojo serve default.project.json",
+    },
+    {
+        "label": "Rojo build out.rbxl",
+        "command": "rojo build --output out.rbxl"
+    }
+]

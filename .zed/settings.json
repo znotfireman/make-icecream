@@ -1,0 +1,53 @@
+// Folder-specific settings
+//
+// For a full list of overridable settings, and general information on folder-specific settings,
+// see the documentation: https://zed.dev/docs/configuring-zed#settings-files
+{
+    "lsp": {
+        "luau-lsp": {
+            "settings": {
+                // luau-lsp settings. These are read by luau-lsp itself.
+                "luau-lsp": {},
+                "ext": {
+                    "roblox": {
+                        // Whether or not Roblox-specific features should be enabled.
+                        "enabled": false,
+                        // The security level of scripts.
+                        // Must be "roblox_script", "local_user", "plugin" or "none".
+                        "security_level": "plugin"
+                    },
+                    "fflags": {
+                        // Whether or not all boolean, non-experimental fflags should be
+                        // enabled by default.
+                        "enable_by_default": false,
+                        // Whether or not FFlag values should be synced with Roblox's
+                        // default FFlag values.
+                        "sync": true,
+                        // FFlags that are forced to some value.
+                        "override": {}
+                    },
+                    "binary": {
+                        // Whether or not the extension should skip searching for a binary in your `$PATH` to
+                        // use instead of installing one itself.
+                        "ignore_system_version": false,
+                        // The path to the language server binary you want to force the extension to use.
+                        "path": null,
+                        // Additional arguments to pass to the language server. If you want to set exactly which
+                        // arguments are passed, use `lsp.luau-lsp.binary.path` & `lsp.luau-lsp.binary.args` instead.
+                        "args": []
+                    },
+                    // Additional definition files to pass to the language server.
+                    // On Windows, the paths are interpreted as absolute if and only if they contain ':'.
+                    // On other platforms, they're interpreted as absolute if and only if they begin with '/'.
+                    // Relative paths are relative to the worktree.
+                    "definitions": [],
+                    // Additional documentation files to pass to the language server.
+                    // On Windows, the paths are interpreted as absolute if and only if they contain ':'.
+                    // On other platforms, they're interpreted as absolute if and only if they begin with '/'.
+                    // Relative paths are relative to the worktree.
+                    "documentation": []
+                }
+            }
+        }
+    }
+}
